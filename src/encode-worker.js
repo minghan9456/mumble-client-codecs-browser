@@ -4,7 +4,6 @@ import toArrayBuffer from 'to-arraybuffer'
 
 const MUMBLE_SAMPLE_RATE = 48000
 
-export default function (self) {
   var opusEncoder, celt7Encoder
   var bitrate
   self.addEventListener('message', e => {
@@ -70,4 +69,5 @@ export default function (self) {
       }, [buffer])
     }
   })
-}
+
+ export default null

@@ -1,11 +1,10 @@
 import { Transform } from 'stream'
 import createPool from 'reuse-pool'
-import webworkify from 'webworkify'
 
-import encodeWorker from './encode-worker'
+import EncodeWorker from './encode-worker'
 
 const pool = createPool(function () {
-  return webworkify(encodeWorker)
+  return new EncodeWorker() 
 })
 // Prepare first worker
 pool.recycle(pool.get())

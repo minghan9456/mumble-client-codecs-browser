@@ -3,7 +3,6 @@ import { Decoder as Celt7Decoder } from 'libcelt7.js'
 
 const MUMBLE_SAMPLE_RATE = 48000
 
-export default function (self) {
   var opusDecoder, celt7Decoder
   self.addEventListener('message', e => {
     const data = e.data
@@ -54,4 +53,5 @@ export default function (self) {
       }, [decoded.buffer])
     }
   })
-}
+
+ export default null
