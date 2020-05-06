@@ -6,6 +6,10 @@ When native libraries are acceptable and more performance is required, consider 
 
 [WebWorker]s are used for en/decoding.
 
+Support webpack worker-loader
+
+https://webpack.js.org/loaders/worker-loader/
+
 ### Usage
 
 ```javascript
